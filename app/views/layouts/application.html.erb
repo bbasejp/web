@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gift</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+<a class="icon-bar" style="position:absolute; left:10px"><img src=<%= image_path("gift_logo.png") %>></a>
+<div class="container">
+	<div class="navbar-header">
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+		</button>
+		  <a href="#hero" class="navbar-brand">Gift <span class="lighter">Charity</span></a>
+	</div>
+	<!-- Start Navigation -->
+	<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+	<ul class="nav navbar-nav">
+		<li>
+		<a href="#hero">Home</a>
+		</li>
+		<li>
+		<a href="#about">ギフトとは？</a>
+		</li>
+		<li>
+		<a href="#gallery">プロジェクト</a>
+		</li>
+		<li>
+		<a href="#slider">寄付・支援する</a>
+		</li>
+		<li>
+		<a href="#faq">支援者の紹介</a>
+		</li>
+		<li>
+		<a href="#contactarea">お問い合わせ</a>
+		</li>
+	</ul>
+	</nav>
+</div>
+</header>
+<%= yield %>
+
+</body>
+</html>

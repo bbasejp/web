@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1><%= @title %></h1>
+    <p>問い合わせ情報</p>
+    <p>メールアドレス：<%= @email %></p>
+    <p>名前：<%= @name %></p>
+    <p>内容：<%= simple_format(@body) %></p>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+module GiftWebHelper
+end
